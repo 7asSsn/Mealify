@@ -16,6 +16,9 @@ body {
    scroll-behavior: smooth
    
 }
+:root {
+  --animation-duration: 0.5s;
+}
 
 .container {
   width: 90%;
@@ -557,7 +560,11 @@ body:not(:has(:target)) .link-Home {
         display: inline-block;
       }
     }
-    .social {
+
+  }
+}
+    .ch-item .social {
+      position: absolute;
       background-color: #ffffff4d;
       width: fit-content;
       padding: 0.625rem;
@@ -567,8 +574,6 @@ body:not(:has(:target)) .link-Home {
       right: -3.125rem;
       transition: right calc(var(--animation-duration) / 2);
     }
-  }
-}
 
 /* ------------------------@media----------------------------- */
 /* xs */
@@ -640,6 +645,14 @@ body:not(:has(:target)) .link-Home {
 /* XL */
 @media screen and (min-width: 1200px) {
 }
+.social {
+ 
+}
+.pictier {
+  position: relative;
+  z-index: 1;
+}
+
 /* !-------------Chefs-End------------------------------------------------------------------------------- */
 
 /* !-------------Gallary-Start------------------------------------------------------------------------------- */
