@@ -1,0 +1,121 @@
+body:has(.mode input:checked) .Gallary ,
+body:has(.mode input:checked) .header
+{
+    background: #252525;
+    transition: all 0.5s ease-in-out;
+}
+
+
+body:has(.mode input:checked ).chefs .ch-item ,
+body:has(.mode input:checked ) .navbar{
+  background: #161616;
+  transition: all 0.5s ease-in-out;
+}
+
+
+body:has(.mode input:checked) {
+  background: #202020;
+  transition: all 0.5s ease-in-out;
+}
+
+body:has(.mode input:checked) {
+p{
+  color: white !important;
+}
+  transition: all 0.5s ease-in-out;
+
+  span{
+    color: #D78C23;
+  }
+  h2{
+    color: white !important;
+  }
+  /* a:hover{
+    color:#AA701F !important;
+  } */
+  .header 
+    .container 
+      .text 
+        .btn 
+          .btn2 
+            .icon a:hover  {
+              color: #D78C23; 
+            }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root:has(.mode:checked)   {
+    --primary-hue: 35;
+    --primary-lightness: 44%;
+    --primary-saturation: 72%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-grey: #252525;
+}
+:root:has(.mode:checked) body {
+    background-color: #202020;
+  }
+  
+  :root:has(.mode:checked) .mode .dark {
+    display: none;
+  }
+  
+  :root:has(.mode:checked) .mode
+  
+  .light {
+    display: block;
+  }
+  body:not(body:has(:target)):has(.mode:checked) li a[href="#home"],
+  body:has(.home:target):has(.mode:checked) li a[href="#home"],
+  body:has(.contact:target):has(.mode:checked) li a[href="#contact"],
+  body:has(.gallery:target):has(.mode:checked) li a[href="#gallery"],
+  body:has(.chefs:target):has(.mode:checked) li a[href="#chefs"] {
+    color: hsl(
+      var(--light-hue),
+      var(--light-saturation),
+      calc(var(--light-lightness) + 90%)
+    );
+  }
+  
+  body:has(.mode:checked) nav .nav-links a:hover {
+    color: #fff;
+  }
+  
+  body:has(.mode:checked) .header-content p {
+    color: var(--color-tertiary);
+  }
+  
+  :root:has(.mode:checked) .chefs-cards .card picture:before {
+    background-image: url("../img/team-shape-dark.svg");
+  }
+  
+  body:has(.mode:checked) .contact .details > div h3 {
+    color: #adadad;
+  }
