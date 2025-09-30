@@ -45,9 +45,9 @@ body {
 /* !-------------Navbar-Start------------------------------------------------------------------------------- */
 /* Navbar */
 .navbar {
+  position: sticky;
   background-color: #fff;
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
