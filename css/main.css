@@ -129,15 +129,12 @@ body:has(#gallary:target) .link-gallary::before,
 body:has(#contact:target) .link-contact::before {
   width: 100%;
 }
-
 body:has(#home:target) .link-Home,
 body:has(#chefs:target) .link-chefs,
 body:has(#gallary:target) .link-gallary,
 body:has(#contact:target) .link-contact {
   color: #000 !important;
 }
-
-
 body:not(:has(:target)) .link-Home::before {
   width: 100%;
 }
